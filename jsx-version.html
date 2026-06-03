@@ -73,6 +73,20 @@
                 ],
                 buttonText: 'Get Pro',
                 buttonVariant: 'primary',
+    
+            };
+            const entreprisePlan = {
+                title: 'Entreprise',
+                price: '$20/mo.',
+                includesText: 'Everything in Hobby, plus:',
+                features: [
+                    'Extended limits on Agent',
+                    'Unlimited Tab completions',
+                    'Background Agents',
+                    'Maximum context windows',
+                ],
+                buttonText: 'Get Pro',
+                buttonVariant: 'primary',
             };
 
             return (
@@ -83,6 +97,7 @@
                         {/* The spread operator {...hobbyPlan} passes all object properties as individual props */}
                         {/* This is the same as writing: title="Hobby" price="Free" includesText="Includes:" etc. */}
                         <PricingCard {...hobbyPlan} />
+                        <PricingCard {...proPlan} />
                         <PricingCard {...proPlan} />
                     </div>
                 </>

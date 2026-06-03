@@ -1,8 +1,18 @@
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* ==========================================================================
+   Page layout
+   Centered canvas on warm off-white background (#f7f7f4)
+   ========================================================================== */
 
 body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -14,6 +24,12 @@ body {
     padding: 20px;
 }
 
+
+/* ==========================================================================
+   Cards container
+   Horizontal row of pricing cards, 24px gap between them
+   ========================================================================== */
+
 .cards-container {
     display: flex;
     flex-direction: row;
@@ -22,6 +38,12 @@ body {
     justify-content: center;
     align-items: flex-start;
 }
+
+
+/* ==========================================================================
+   Card shell
+   Fixed width 320px, min-height 380px, warm gray fill (#f2f1ed)
+   ========================================================================== */
 
 .card {
     display: flex;
@@ -38,6 +60,12 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+
+/* ==========================================================================
+   Card typography — plan name & price
+   Primary text color: #26251e | Muted: rgba(38, 37, 30, 0.5)
+   ========================================================================== */
 
 .card-title {
     font-size: 22px;
@@ -64,6 +92,12 @@ body {
     font-size: 14px;
     color: rgba(38, 37, 30, 0.5);
 }
+
+
+/* ==========================================================================
+   Feature list
+   "Includes" label + checkmark bullet items
+   ========================================================================== */
 
 .card-content {
     margin-bottom: 32px;
@@ -94,6 +128,14 @@ body {
     margin-right: 10px;
     font-weight: 400;
 }
+
+
+/* ==========================================================================
+   CTA buttons
+   Pill shape (999px radius). Pinned to bottom of card via margin-top: auto
+   — .secondary: light gray (#e6e5e0)
+   — .primary:   dark fill (#111) with white text
+   ========================================================================== */
 
 .download-button {
     margin-top: auto;
@@ -129,6 +171,12 @@ body {
 .download-button.primary:active {
     background-color: #333;
 }
+
+
+/* ==========================================================================
+   Dev label badge
+   Fixed to top center — not part of the pricing UI
+   ========================================================================== */
 
 .page-label {
     position: fixed;
