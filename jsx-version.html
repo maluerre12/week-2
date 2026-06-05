@@ -57,9 +57,9 @@
                 title: 'Hobby',
                 price: 'Free',
                 includesText: 'Includes:',
-                features: ['No credit card required', 'Limited Agent requests', 'Limited Tab completions'],
-                buttonText: 'Download',
-                buttonVariant: 'secondary',
+                features: ['No credit card required', 'Limited Agent requests', 'Limited Tab completions', 'test'],
+                buttonText: 'Start from free',
+                buttonVariant: 'primary',
             };
             const proPlan = {
                 title: 'Pro',
@@ -68,9 +68,7 @@
                 features: [
                     'Extended limits on Agent',
                     'Unlimited Tab completions',
-                    'Background Agents',
-                    'Maximum context windows',
-                ],
+                    'Background Agents',                ],
                 buttonText: 'Get Pro',
                 buttonVariant: 'primary',
     
@@ -88,9 +86,21 @@
                 buttonText: 'Get Pro',
                 buttonVariant: 'primary',
             };
+            const businessPlan = {
+                title: 'Business',
+                price: '$20/mo.',
+                includesText: 'Everything in Hobby, plus:',
+                features: [
+                    'Extended limits on Agent',
+                    'Unlimited Tab completions',
+                ],
+                buttonText: 'Get Business',
+                buttonVariant: 'primary',
+            };  
 
             return (
-                // <> is a React Fragment - it groups elements without adding extra HTML divs
+                // 
+                // <> is aeact Fragment - it groups elements without adding extra HTML divs
                 <>
                     <p className="page-label"><strong>JSX version</strong> — same UI, built with components</p>
                     <div className="cards-container">
