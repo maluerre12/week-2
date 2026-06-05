@@ -57,9 +57,13 @@
                 title: 'Hobby',
                 price: 'Free',
                 includesText: 'Includes:',
-                features: ['No credit card required', 'Limited Agent requests', 'Limited Tab completions', 'test'],
+                features: [
+                    'No credit card required',
+                    'Limited Agent requests',
+                    'Limited Tab completions',
+                    'test'],
                 buttonText: 'Start from free',
-                buttonVariant: 'primary',
+                buttonVariant: 'tertiary',
             };
             const proPlan = {
                 title: 'Pro',
@@ -69,7 +73,7 @@
                     'Extended limits on Agent',
                     'Unlimited Tab completions',
                     'Background Agents',                ],
-                buttonText: 'Get Pro',
+                buttonText: 'Test',
                 buttonVariant: 'primary',
     
             };
@@ -88,13 +92,13 @@
             };
             const businessPlan = {
                 title: 'Business',
-                price: '$20/mo.',
+                price: '$80/mo.',
                 includesText: 'Everything in Hobby, plus:',
                 features: [
                     'Extended limits on Agent',
                     'Unlimited Tab completions',
                 ],
-                buttonText: 'Get Business',
+                buttonText: 'Get your own',
                 buttonVariant: 'primary',
             };  
 
@@ -109,6 +113,7 @@
                         <PricingCard {...hobbyPlan} />
                         <PricingCard {...proPlan} />
                         <PricingCard {...proPlan} />
+                        <PricingCard {...businessPlan} />
                     </div>
                 </>
             );
