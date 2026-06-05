@@ -33,6 +33,33 @@ function Pricing() {
         buttonText: 'Get Pro',
         buttonVariant: 'primary',
     };
+    const enterprisePlan = {
+        title: 'Enterprise',
+        priceAmount: 'Custom',
+        pricePeriod: null,
+        includesText: 'Everything in Pro, plus:',
+        features: [
+            'SSO and SAML',
+            'Admin controls and audit logs',
+            'Priority support',
+            'Custom contracts and invoicing',
+        ],
+        buttonText: 'Contact sales',
+        buttonVariant: 'secondary',
+    };
+    const businessPlan = {
+        title: 'Business',
+        priceAmount: 'Custom',
+        pricePeriod: null,
+        includesText: 'Everything in Pro, plus:',
+        features: [
+            'SSO and SAML',
+            'Admin controls and audit logs',
+            'Priority support',
+        ],
+        buttonText: 'Contact sales',
+        buttonVariant: 'secondary',
+    };
 
     return (
         // <> is a React Fragment — groups elements without adding extra HTML divs
@@ -40,9 +67,11 @@ function Pricing() {
             <p className="page-label"><strong>React App</strong> — running with Vite</p>
             <div className="cards-container">
                 {/* The spread operator {...hobbyPlan} passes all object properties as individual props */}
-                {/* This is the same as: title="Hobby" price="Free" includesText="Includes:" etc. */}
+                {/* This is the same as: title="Hobby" priceAmount="Free" includesText="Includes:" etc. */}
                 <PricingCard {...hobbyPlan} />
                 <PricingCard {...proPlan} />
+                <PricingCard {...enterprisePlan} />
+                <PricingCard {...businessPlan} />
             </div>
         </>
     );
